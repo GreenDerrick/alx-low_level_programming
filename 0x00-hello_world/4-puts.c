@@ -6,7 +6,9 @@
  */
 int main(void)
 {
-	char name = "Programming is like building a multilingual puzzle";
+	char name[50];
+
+	name = "Programming is like building a multilingual puzzle";
 	gets(name);
 	puts(name);
 	return (0);
