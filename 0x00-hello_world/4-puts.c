@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char name[50];
+	char name[150];
 
 	name = "Programming is like building a multilingual puzzle";
 	gets(name);
