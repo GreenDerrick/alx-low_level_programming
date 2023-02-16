@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc main.c | touch cisfun | chmod a+x cisfun
