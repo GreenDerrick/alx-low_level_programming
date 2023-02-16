@@ -1,2 +1,1 @@
-#!/bin/bash
-gcc puts.c
+#include <stdio.h>
