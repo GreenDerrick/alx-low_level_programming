@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	int alpha;
+	int reverse;
 
-	for (alpha = 'z'; alpha <= 'a'; alpha++)
+	for (reverse = 'a'; reverse <= 'z'; reverse++)
 	{
-		putchar(alpha);
+		putchar((reverse % 10) + 'z');
 	}
 	putchar('\n');
 	return (0);
