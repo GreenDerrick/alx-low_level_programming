@@ -8,7 +8,7 @@ int main(void)
 {
 	int reverse;
 
-	for (reverse = 'a'; reverse <= 'z'; reverse++)
+	for (reverse = 'z'; reverse <= 'a'; reverse++)
 	{
 		putchar(reverse);
 	}
