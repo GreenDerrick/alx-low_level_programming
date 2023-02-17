@@ -2,15 +2,16 @@
 /**
  * main -Entry point
  *
- * Return:0 (Always)
+ * Return: 0 (Always)
  */
-int main(void)
-{
-	int num;
+int main(void){
 
-	for (num = 0 ; num < 10 ; num++)
+	long numero;
+	
+	for (numero = 0; numero < 10; numero++)
 	{
-		putchar(num);
+		putchar((numero%10) + '0');
 	}
+	putchar('\n');
 	return (0);
 }
