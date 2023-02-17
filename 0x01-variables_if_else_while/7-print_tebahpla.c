@@ -10,7 +10,7 @@ int main(void)
 
 	for (reverse = 'a'; reverse <= 'z'; reverse++)
 	{
-		putchar((reverse % 10) + 'z');
+		putchar(reverse);
 	}
 	putchar('\n');
 	return (0);
