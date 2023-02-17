@@ -5,16 +5,16 @@
  * Return: 0 (Always)
  */
 
-int main(void) 
+int main(void)
 {
 	int ch;
 	int a;
+
 	for (ch = 'a'; ch <= 'z' ; ch++)
 	{
 		putchar(ch);
 	}
-	
-	for (a = 'A' ; a <= 'Z' ; a ++)
+	for (a = 'A' ; a <= 'Z' ; a++)
 	{
 		putchar(a);
 	}
