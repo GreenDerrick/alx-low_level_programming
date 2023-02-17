@@ -4,14 +4,14 @@
  *
  * Return: 0 (Always)
  */
-
 int main(void)
 {
-	int a;
+        int alpha;
 
-	for (a = 0; a < 10; a++)
+        for (alpha = 0 ; alpha <= 10 ; alpha++)
 	{
-		printf("%d\n", a);
-	}
-	return (0);
+                printf("%d", alpha);
+        }
+return (0);
 }
+
