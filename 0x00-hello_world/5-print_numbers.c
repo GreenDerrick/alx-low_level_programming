@@ -4,14 +4,13 @@
  *
  * Return: 0 (Always)
  */
-
 int main(void)
 {
-	int a;
+	int chari;
 
-	for (a = 0; a < 10; a++)
+	for (chari = 0 ; chari < 10 ; chari++)
 	{
-		printf("%d", a);
+		printf("%d", chari);
 	}
 	return (0);
 }
