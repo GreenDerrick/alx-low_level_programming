@@ -10,9 +10,9 @@ int main(void)
 
 	for (alpha = 0 ; alpha < 10 ; alpha++)
 	{
-		printf("%d", alpha);
+		putchar((alpha % 10) + '0');
 	}
-	printf("\n");
+	putchar('\n');
 return (0);
 }
 
