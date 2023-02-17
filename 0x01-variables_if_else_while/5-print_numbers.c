@@ -6,12 +6,13 @@
  */
 int main(void)
 {
-        int alpha;
+	int alpha;
 
-        for (alpha = 0 ; alpha <= 10 ; alpha++)
+	for (alpha = 0 ; alpha < 10 ; alpha++)
 	{
-                printf("%d", alpha);
-        }
+		printf("%d", alpha);
+	}
+	printf("\n");
 return (0);
 }
 
