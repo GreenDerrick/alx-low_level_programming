@@ -11,7 +11,7 @@ int main(void)
 	for (alpha = '0'; alpha <= '9'; alpha++)
 	{
 		putchar(alpha);
-		if (digit == '9')
+		if (alpha == '9')
 			continue;
 		putchar(',');
 		putchar(' ');
