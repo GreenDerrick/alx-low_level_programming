@@ -6,14 +6,11 @@
  */
 int main(void)
 {
-	int number;
+	int alpha;
 
-	for (number = 0; number < 10 ; number++)
+	for (alpha = 0; alpha < 10; alpha++)
 	{
-		putchar(number);
-		putchar('\,');
+		putchar(alpha);
 	}
-	putchar ('\n');
-
-	return(0);
+	return (0);
 }
