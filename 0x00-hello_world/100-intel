@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S mainintel.c mainintel.c
+gcc -S mainintel.c mainintel.s
