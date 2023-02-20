@@ -12,7 +12,6 @@ int main(void)
 	long int numbers = sizeof(numbers);
 	long long int numbering = sizeof(numbering);
 	float floating = sizeof(floating);
-	
 	printf("Size of char: %c\n", character);
 	printf("Size of int: %d\n", number);
 	printf("size of long int %ld\n", numbers);
