@@ -1,3 +1,2 @@
 #!/bin/bash
 gcc -S 7intel.c -o 7intel.s
-
