@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc -S intel.c -o intel.s
+gcc -S 7intel.c -o 7intel.s
+
