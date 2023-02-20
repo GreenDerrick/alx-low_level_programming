@@ -1,9 +1,5 @@
 	.file	"mainintel.c"
 	.text
-	.section	.rodata
-.LC0:
-	.string	"This is it"
-	.text
 	.globl	main
 	.type	main, @function
 main:
@@ -15,8 +11,7 @@ main:
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
-	leaq	.LC0(%rip), %rax
-	movl	%eax, %edi
+	movl	$49, %edi
 	call	putchar@PLT
 	movl	$0, %eax
 	popq	%rbp
