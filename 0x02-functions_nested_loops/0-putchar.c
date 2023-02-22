@@ -1,7 +1,5 @@
 #include <stdio.h>
-
-int x;
-#include "main.h"
+#include"main.h"
 /**
  * main - print _putchar
  *
