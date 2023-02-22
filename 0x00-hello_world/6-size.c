@@ -7,17 +7,17 @@
  */
 int main(void)
 {
-	int number = sizeof(number);
-	char character = sizeof(character);
-	long int numbers = sizeof(numbers);
-	long long int numbering = sizeof(numbering);
-	float floating = sizeof(floating);
+	int number = sizeof(int);
+	char character = sizeof(char);
+	long int numbers = sizeof(long int);
+	long long int numbering = sizeof(long long int);
+	float floating = sizeof(float);
 
-	printf("Size of char: %d byte(s)\n", character);
-	printf("Size of int: %d byte(s)\n", number);
-	printf("Size of long int %ld byte(s)\n", numbers);
-	printf("Size of long long int: %lld byte(s)\n", numbering);
-	printf("Size of a float: %f byte(s)\n", floating);
-
+	printf("Size of char: %lu byte(s)\n", sizeof(char));
+	printf("Size of int: %lu byte(s)\n", sizeof(int));
+	printf("Size of long int %lu byte(s)\n", sizeof(long int));
+	printf("Size of long long int: %lu byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %lu byte(s)\n", sizeof(float));
+	
 	return (0);
 }
