@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,6 +7,11 @@
  */
 int main(void)
 {
-	print_alphabet();
+	char alpha;
+	for (alpha = 'a'; alpha <='z'; alpha++)
+	{
+		_putchar(alpha);
+		_putchar('\n');
+	}
 	return (0);
 }
