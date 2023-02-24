@@ -1,19 +1,18 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * main - check the code
+ * print_numbers - prints 0 to 9.
  *
- * print_numbers: this is to print all numbers
- *
- * Retun: 0 Always
  */
 void print_numbers(void)
 {
-	int c;
+	int num = 0;
 
-	for (c = 0; c < 10; c++)
+	while (num < 10)
 	{
-		_putchar('1' + num);
-		_putchar('\n');
+		_putchar('0' + num);
+		num++;
 	}
+	_putchar('\n');
 }
+
