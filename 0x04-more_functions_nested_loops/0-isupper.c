@@ -1,11 +1,13 @@
 #include "main.h"
 /**
- * main- see if the function will function
+ * main - Entry point
+ *int  _isupper(int c) - desctiprion
+ * Return: 0
+ * _isupper - checks for uppercase
  *
- * Return: 0 (Always)
+ * _isupper - Short description
  */
-
-int _isupper(int c)
+int _isupper(int c)/*short description*/
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);
