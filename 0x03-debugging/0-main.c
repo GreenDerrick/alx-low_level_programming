@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int i;
+
 	int i = 98;
 
 	if (i < 0)
