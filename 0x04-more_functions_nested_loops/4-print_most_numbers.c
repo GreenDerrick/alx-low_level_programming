@@ -2,19 +2,20 @@
 /**
  * print_most_numbers - function to print numbers
  *
- * Return: nothing
  */
 void print_most_numbers(void)
 {
 	int a;
-
-	for (a = 0; a <= 9; a++)
+	a = 0;
+	
+	while (a < 10)
 	{
-		if (a == 2 || a == 4)
+		if(a == 2 || a == 4)
 		{
 			continue;
-		}
-		_putchar(a);
-		_putchar('\n');
+		} else
+			_putchar(a);
+		a++;
 	}
+
 }
