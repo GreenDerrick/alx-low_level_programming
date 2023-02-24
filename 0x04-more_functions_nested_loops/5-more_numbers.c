@@ -1,19 +1,25 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * main- this is the main function
- * more_numbers - Print numbers from 0 to 14
+ * more_numbers - prints 0 to 14 on one line ten times.
  *
- * main - main function
- * Return: 0 Always
  */
 void more_numbers(void)
 {
-	int number = 0;
+	int i;
+	int num = 0;
 
-	while (number < 14)
+	for (i = 0 ; i < 10 ; i++)
 	{
-		_putchar(('0' + number) * 10);
-		number++;
+		while (num < 15)
+		{
+			if (num > 9)
+				_putchar('0' + num / 10);
+			_putchar('0' + num % 10);
+			num++;
+		}
+		num = 0;
+		_putchar('\n');
 	}
 }
+
