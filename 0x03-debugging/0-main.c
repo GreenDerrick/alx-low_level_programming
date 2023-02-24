@@ -1,20 +1,19 @@
 #include "main.h"
 /**
- * Main- test function that prints if integer is positive or negative
+ * main - check the logic to see positive and negative numbers
  *
- * Return :0
+ * Retun: 0 (Always)
  */
 
 int main(void)
 {
 	int i;
+	int i = 98;
 
-	i = 0;
-	positive_or_negative(i);
+	if (i < 0)
+		printf("%d is negative", i);
+	else
+		printf("%d is positive", i);
 
 	return (0);
 }
-~
-~
-~
-
