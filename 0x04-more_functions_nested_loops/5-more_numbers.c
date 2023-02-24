@@ -9,10 +9,11 @@
  */
 void more_numbers(void)
 {
-	int more;
+	int number = 0;
 
-	for (more = 0; more <= 14; more++)
+	while (number < 14)
 	{
-		_putchar((more) * 10);
+		_putchar('0' + 1);
+		number++;
 	}
 }
