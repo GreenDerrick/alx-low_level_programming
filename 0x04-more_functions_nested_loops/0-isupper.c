@@ -1,11 +1,10 @@
 #include "main.h"
 /**
  * _isupper - desctiprion
- * Return: 0
- * @c - shor desctopyopm
- * _isupper - checks for uppercase
+ * 
  *@c - shortest ccharaster
- * _isupper - Short description
+ *
+ * Return: 1 if upper 
  */
 int _isupper(int c)/*short description*/
 {
