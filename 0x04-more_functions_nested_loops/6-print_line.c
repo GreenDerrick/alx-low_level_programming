@@ -1,4 +1,3 @@
-#include "main.h"
 
 /**
  * print_line - prints a line to a given lenght.
@@ -8,10 +7,11 @@
  */
 void print_line(int n)
 {
-	for (n = 0; n <= 20; n++)
+	while (!(n <= 0))
 	{
 		_putchar('_');
-	}
-
+		n--;
+}
+	_putchar('\n');
 }
 
