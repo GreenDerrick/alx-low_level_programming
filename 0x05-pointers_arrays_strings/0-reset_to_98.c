@@ -11,5 +11,5 @@ void reset_to_98(int *n)
 	p = 402;
 	*n = 98;
 
-	printf("%d\n", p);
+	printf("%p\n", n);
 }
