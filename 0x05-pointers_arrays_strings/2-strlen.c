@@ -2,6 +2,7 @@
 /**
  * _strlen - get string length
  *
+ * Return: c
  * @s: variable to be tested
  */
 int _strlen(char *s)
