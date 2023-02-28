@@ -12,6 +12,5 @@ int _strlen(char *s)
 	for (number = 0; s[number] != '\0'; number++)
 	{
 	}
-	_putchar(number);
 	return (number);
 }
