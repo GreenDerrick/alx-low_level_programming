@@ -12,6 +12,5 @@ void print_rev(char *s)
 	{
 		_putchar(number);
 	}
-	return(number);
 	_putchar('\n');
 }
