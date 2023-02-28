@@ -10,6 +10,6 @@ void rev_string(char *s)
 
 	for (number = s['\0']; number != 0; number--)
 	{
-		_putchar(s[number]);
+		_putchar(s[number] - '1');
 	}
 }
