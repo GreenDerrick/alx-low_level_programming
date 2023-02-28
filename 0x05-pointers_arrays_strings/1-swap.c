@@ -2,15 +2,14 @@
 /**
  * swap_int - swap integer values
  *
- * @*a: first integer
- * @*b: second integer
+ * @a: first integer
+ * @b: second integer
  */
 void swap_int(int *a, int *b)
 {
 	int c;
-	
+
 	c = *a;
 	*a = *b;
 	*b = c;
-	
 }
