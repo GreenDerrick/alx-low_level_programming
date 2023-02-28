@@ -12,5 +12,4 @@ void rev_string(char *s)
 	{
 	}
 	_putchar(s[number]);
-	_putchar('\n');
 }
