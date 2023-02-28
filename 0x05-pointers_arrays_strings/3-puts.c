@@ -8,14 +8,9 @@ void _puts(char *str)
 {
 	int number;
 
-	for(number = 0; str[number] != str['\0']; number++)
+	for(number = 0; str[number] != str['/0']; number++)
 	{
+		_putchar(str);
 	}
-	
-	int num2;
-	for (num2 = 0; num2 <= number; num2++)
-	{
-		_putchar(str[num2]);
-	}
-	_putchar('/n');
+	_putchar('\n');
 }
