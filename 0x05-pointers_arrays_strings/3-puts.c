@@ -10,6 +10,6 @@ void _puts(char *str)
 
 	for (number = 0; number != str['\0']; number++)
 	{
-		_putchar(number);
 	}
+	_putchar(number);
 }
