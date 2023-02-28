@@ -13,6 +13,7 @@ void print_rev(char *s)
 	{
 		number--;
 	}
+	_putchar(number);
 	_putchar('\n');
 
 }
