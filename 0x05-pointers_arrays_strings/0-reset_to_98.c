@@ -13,5 +13,4 @@ void reset_to_98(int *n)
 
 	printf("Value of p: %d\n", p);
 	*n = 98;
- 
 }
