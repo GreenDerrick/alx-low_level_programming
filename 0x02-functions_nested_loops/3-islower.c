@@ -53,7 +53,7 @@ int _islower(int c)
 			break;
 		case 'm':
 			_putchar('1');
-			_putchar(']\n');
+			_putchar('\n');
 			break;
 		case 'n':
 			_putchar('1');
