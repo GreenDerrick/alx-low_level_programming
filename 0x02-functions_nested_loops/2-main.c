@@ -6,6 +6,8 @@
  */
 int main(void)
 {
-	print_alphabet_x10();
+	int c;
+	c = 'b';
+	_islower(c);
 	return (0);
 }

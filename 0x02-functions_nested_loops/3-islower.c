@@ -8,8 +8,27 @@
  */
 int _islower(int c)
 {
-	if (_islower(c))
-		return (1);
-	else
-		return (0);
+	switch (c)
+	{
+		case 'a':
+			_putchar('1');
+			_putchar('\n');
+			break;
+		case 'b':
+			_putchar('1');
+			_putchar('\n');
+			break;
+		case 'c':
+			_putchar('1');
+			_putchar('\n');
+			break;
+		case 'd':
+			_putchar('1');
+			_putchar('\n');
+			break;
+		default:
+			_putchar('0');
+			_putchar('\n');
+			break;
+	}
 }
