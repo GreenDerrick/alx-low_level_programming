@@ -6,8 +6,5 @@
  */
 int main(void)
 {
-	int r;
-	
-	r = _islower('H');
 	return (0);
 }
