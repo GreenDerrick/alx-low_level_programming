@@ -31,5 +31,5 @@ int _islower(int c)
 			_putchar('\n');
 			break;
 	}
-	retun (0);
+	return (c);
 }
