@@ -17,8 +17,8 @@ void print_array(int *a, int n)
 	}
 		if (i == (n - 1))
 		{
-			_putchar( '1]');
+			_putchar('1]');
 		}
-			_putchar("\n") ; 
+			_putchar('\n') ; 
 }
 i
