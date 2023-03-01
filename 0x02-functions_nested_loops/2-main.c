@@ -7,7 +7,7 @@
 int main(void)
 {
 	int c;
-	c = 'b';
+
 	_islower(c);
 	return (0);
 }
