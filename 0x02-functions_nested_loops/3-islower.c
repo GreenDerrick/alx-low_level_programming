@@ -12,23 +12,18 @@ int _islower(int c)
 	{
 		case 'a':
 			_putchar('1');
-			_putchar('\n');
 			break;
 		case 'b':
 			_putchar('1');
-			_putchar('\n');
 			break;
 		case 'c':
 			_putchar('1');
-			_putchar('\n');
 			break;
 		case 'd':
 			_putchar('1');
-			_putchar('\n');
 			break;
 		case 'e':
 			_putchar('1');
-			_putchar('\n');
 			break;
 		case 'f':
 			_putchar('1');
@@ -53,7 +48,6 @@ int _islower(int c)
 			break;
 		case 'm':
 			_putchar('1');
-			_putchar('\n');
 			break;
 		case 'n':
 			_putchar('1');
@@ -96,7 +90,6 @@ int _islower(int c)
 			break;
 		default:
 			_putchar('0');
-			_putchar('\n');
 			break;
 	}
 return (c);
