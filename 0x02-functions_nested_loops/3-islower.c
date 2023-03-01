@@ -10,19 +10,19 @@ int _islower(int c)
 {
 	switch (c)
 	{
-		case 'a':
+		case 'o':
 			_putchar('1');
 			break;
 		case 'b':
 			_putchar('1');
 			break;
-		case 'c':
+		case 's':
 			_putchar('1');
 			break;
-		case 'd':
+		case 'u':
 			_putchar('1');
 			break;
-		case 'e':
+		case 'n':
 			_putchar('1');
 			break;
 		case 'f':
