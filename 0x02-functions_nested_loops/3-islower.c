@@ -28,7 +28,7 @@ int _islower(int c)
 		case 'f':
 			_putchar('1');
 			break;
-		case 'j':
+		case 'c:
 			_putchar('1');
 			break;
 		default:
