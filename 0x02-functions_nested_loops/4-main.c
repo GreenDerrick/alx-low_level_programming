@@ -8,7 +8,7 @@ int main(void)
 {
 	int r;
 
-	r = 'a';
+	r = 'A';
 	_isalpha(r);
 	_isalpha('\n');
 	r = 'o';
