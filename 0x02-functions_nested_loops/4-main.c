@@ -14,7 +14,7 @@ int main(void)
 	r = 'o';
 	_isalpha(r);
 	_isalpha('\n');
-	r = '108';
+	r = 108;
 	_isalpha(r);
 	_isalpha('\n');
 	r = 'C';
