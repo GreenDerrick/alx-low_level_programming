@@ -8,7 +8,7 @@ int main(void)
 {
 	int r;
 	
-	r = 'a';
+	r = 'H';
 	_islower(r);
 	return (0);
 }
