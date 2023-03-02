@@ -1,15 +1,10 @@
-#include <stdio.h>
+#include "main.h"
+
 int main(void)
 {
-int alpha;
+	int r;
 
-for (alpha = 'a'; alpha <= 'z'; alpha++)
-{
-	putchar(alpha);
-	putchar('\n');
-
-}
-
-putchar('\n');
-return (0);
+	r = 'a';
+	_islower(r);	
+	return(0);
 }
