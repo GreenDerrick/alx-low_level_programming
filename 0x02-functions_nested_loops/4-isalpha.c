@@ -18,7 +18,19 @@ int _isalpha(int c)
 		{
 			_putchar('0');
 		}
-	}
 
+		for (alpha = 'A'; alpha <= 'Z'; alpha++)
+		{
+			if (c != alpha)
+			{
+				continue;
+				_putchar('1');
+			}
+			else
+			{
+				_putchar('0');
+			}
+		}
+	}
 	return (0);
 }
