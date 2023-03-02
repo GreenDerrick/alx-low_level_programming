@@ -10,11 +10,6 @@ int main(void)
 
 	r = 'a';
 	_isalpha(r);
-	r = 'o';
-	_isalpha(r);
-	r = 108;
-	_isalpha(r);
-	r = ';';
-	_isalpha(r);
+	_isalpha('\n');
 	return (0);
 }

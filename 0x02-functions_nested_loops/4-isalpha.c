@@ -9,7 +9,7 @@ int _isalpha(int c)
 	int alpha;
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		if (alpha == c)
+		if (c != alpha)
 		{
 			continue;
 			_putchar('1');
