@@ -10,16 +10,16 @@ int main(void)
 
 	r = 'A';
 	_isalpha(r);
-	_isalpha('\n');
+	_putchar('\n');
 	r = 'o';
 	_isalpha(r);
-	_isalpha('\n');
+	_putchar('\n');
 	r = 108;
 	_isalpha(r);
-	_isalpha('\n');
+	_putchar('\n');
 	r = 'C';
 	_isalpha(r);
-	_isalpha('\n');
+	_putchar('\n');
 
 	return (0);
 }
