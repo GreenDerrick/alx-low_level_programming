@@ -8,7 +8,7 @@ int _isalpha(int c)
 {
 	int alpha;
 
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	for (alpha = 'a' || 'A'; alpha <= 'z' || 'Z'; alpha++)
 	{
 		if (c != alpha)
 		{
