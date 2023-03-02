@@ -20,7 +20,7 @@ int _islower(int c)
 			break;
 		case 'n':
 			break;
-		case 'f':
+		case 'h':
 			break;
 		case 'c':
 			break;
