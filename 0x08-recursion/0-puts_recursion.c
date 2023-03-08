@@ -5,19 +5,10 @@
  *
  * Return: none
  */
-int len(char *s)
-{
-	if(*s != '\0')
-		return 1 + len(s + 1);
-}
 
 void _puts_recursion(char *s)
 {
-	int i;
-	int length;
-	
-	length = len(s);
-	
-	for (i = 0; i <= length; i++)
-		return (s);
+	if(*s != '\0')
+		_putchar(*s +1);
+	_puts_recursion(s +1);
 }
