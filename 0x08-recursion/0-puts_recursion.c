@@ -10,9 +10,11 @@ void _puts_recursion(char *s)
 	int i;
 	int len;
 
-	if(*s != '\0')
+	i`f(*s != '\0')
 		len = 1 + _puts_recursion(s + 1);
 
 	for(i = 0; i <= len; i++)
+	{	
 		return *(s + i);
+	}
 }
