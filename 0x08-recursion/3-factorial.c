@@ -10,13 +10,13 @@ int factorial(int n)
 	int i;
 	i = 1;
 
-	if(n == i)
+	if(n != i)
 	{
-		return (1);
+		return (n * factorial(n - 1));
 	}
 	else
 	{
-		return (n * factorial(n - 1));
+		return (1);
 	}
 	return (0);
 }
