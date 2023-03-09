@@ -4,7 +4,7 @@
  *
  * @c: variable to be manipulated
  *
- * Return : 1 if true and 0 if otherwise
+ * Return: 1 if true and 0 if otherwise
  */
 int _islower(int c)
 {
