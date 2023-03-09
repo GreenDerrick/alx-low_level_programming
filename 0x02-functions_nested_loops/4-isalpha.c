@@ -6,20 +6,16 @@
  */
 int _isalpha(int c)
 {
-	int alpha;
-
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	if(c >= 'a' && c <= 'z')
 	{
-		if (c != alpha)
-		{
-			continue;
-			_putchar('1');
-		}
-		else
-		{
-			_putchar('0');
-		}
-
+		return (1);
 	}
-	return (0);
+	else if(c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
