@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * strdup - function for duplicating the string
+ * _strdup - function for duplicating the string
  *
  * @str: string to be duplicated
  * Return: NULL if insufficient memory
