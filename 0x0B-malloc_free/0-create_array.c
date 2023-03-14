@@ -8,23 +8,21 @@
  *
  * Return: 0 if Null else Return to aaray
  */
-
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
-	int *p;
+	char *p;
 
-	if(size == NULL)
+	if (size == 0)
 		return (NULL);
 
-	p = malloc(sizeof(char) * size);
+	p = malloc(size * sizeof(char));
 
 	if (p == NULL)
-		return (0);
+		return (NULL);
 
-	for (i = 0; i <= size; i++)
+	for (i = 0; i < size; i++)
 		p[i] = c;
 
 	return (p);
 }
-
