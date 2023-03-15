@@ -1,52 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include <ctype.h>
+
 /**
-		
- * main - multiplies two numbers
-		
- * @argc: number of arguments
-		
- * @argv: array of arguments
-		
+ * main - function contains argument counter and argument vector
  *
-		
- * Return: 0 (Success), 1 (Error)
-		
+ * @argv: argument vector contains strings
+ * @argc: argument counter contains number of arguments passed
+ * Return: 0 ALways
  */
-		
+
 int main(int argc, char *argv[])
-		
 {
-		
-	int result, num1, num2;
-		
+	int i;
+	int product;
 
-		
-	if (argc < 3 || argc > 3)
-		
+	i = 2;
+	if (argc == i)
 	{
-		
-		printf("Error\n");
-		
-		return (1);
-		
+		product = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", product);
 	}
-		
+	if (argc > 3 || argc < 3)
+	{
+		printf("Error\n");
+	}
 
-		
-	num1 = atoi(argv[1]);
-		
-	num2 = atoi(argv[2]);
-		
-	result = num1 * num2;
-		
-
-		
-	printf("%d\n", result);
-		
-
-		
 	return (0);
-		
 }
