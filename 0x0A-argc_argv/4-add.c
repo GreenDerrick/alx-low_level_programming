@@ -16,11 +16,11 @@ int main(int argc, char **argv)
 	int i;
 	int add;
 
-	i = 1;
+	i = 4;
 
-	while (i < argc)
+	while (i <= argc)
 	{
-		add = atoi(argv[i]) + atoi(argv[i + 1]);
+		add = atoi(argv[1]) + atoi(argv[2]) + atoi(argv[3]) + atoi(argv[4]);
 		printf("%d\n", add);
 		i++;
 	}
