@@ -14,13 +14,21 @@
 int main(int argc, char **argv)
 {
 	int i;
+	int add;
 
 	i = 1;
 
-	if (argc <= i)
+	if (argc == 1)
 	{
 		printf("0\n");
 	}
 
-	return (0);
+	while (i < argc)
+	{
+		add = atoi(argv[i]) + add;
+		i++;
+	}
+	printf("%d\n", add);
+
+
 }
