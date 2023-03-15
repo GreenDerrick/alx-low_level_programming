@@ -18,11 +18,6 @@ int main(int argc, char **argv)
 
 	i = 1;
 
-	if (argc == 1)
-	{
-		printf("0\n");
-	}
-
 	while (i < argc)
 	{
 		add = atoi(argv[i]) + add;
@@ -30,5 +25,5 @@ int main(int argc, char **argv)
 	}
 	printf("%d\n", add);
 
-
+	return (0);
 }
