@@ -14,13 +14,13 @@
 int main(int argc, char **argv)
 {
 	int i;
-	
-	i = 1;
 
+	i = 1;
 
 	if (argc <= i)
 	{
 		printf("0\n");
 	}
+
 	return (0);
 }
