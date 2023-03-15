@@ -13,8 +13,6 @@
 
 int main(int argc, char **argv)
 {
-	int i;
-	long int add;
 
 	if (argc == 1)
 	{
