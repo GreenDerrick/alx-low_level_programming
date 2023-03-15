@@ -11,7 +11,7 @@
  * Return: 0 if no digits are passed
  */
 
-int main(int argc, char **argv)
+int main(int argc, __attribute__(unused)char **argv)
 {
 
 	if (argc == 1)
