@@ -17,6 +17,10 @@ void *malloc_checked(unsigned int b)
 	{
 		exit(98);
 	}
+	else
+	{
+		c = realloc(sizeof(*c) *2);
+	}
 
 	return (0);
 }
