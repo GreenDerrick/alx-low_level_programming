@@ -18,7 +18,6 @@ int main(void)
     printf("f: %p\n", (void *)f);
     d = malloc_checked(INT_MAX);
     printf("d: %p\n", (void *)d);
-
     free(u);
     free(i);
     free(f);
