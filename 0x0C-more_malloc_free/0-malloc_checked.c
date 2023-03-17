@@ -16,7 +16,7 @@ void *malloc_checked(unsigned int b)
 	if (c == NULL)
 	{
 		printf("Error: no memory has been allocated");
-		return (1);
+		exit (98);
 	}
 
 	free(c);
