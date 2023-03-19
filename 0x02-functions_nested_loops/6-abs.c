@@ -2,6 +2,7 @@
 /**
  * _abs - function to process the absolute value
  *
+ * @i: integer to be tested
  * Return: 0 always
  */
 
@@ -15,4 +16,4 @@ int _abs(int i)
 		return (val);
 	}
 	return (i);
-}		
+}
