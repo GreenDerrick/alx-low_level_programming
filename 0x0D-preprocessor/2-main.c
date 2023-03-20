@@ -6,6 +6,5 @@
  */
 int main(void)
 {
-	char *s = __FILE__;
 	return (0);	
 }
