@@ -6,5 +6,5 @@
  */
 int main(void)
 {
-	return (__FILE__);
+	return (0);
 }
