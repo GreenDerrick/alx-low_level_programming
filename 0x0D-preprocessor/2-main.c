@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	char s[] = __FILE__;
+	char *s = __FILE__;
 	return (s);
 }
