@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	_putchar(__FILE__ + "0");
-	return (0);
+	char s[] = __FILE__;
+	return (atoi(s));
 }
