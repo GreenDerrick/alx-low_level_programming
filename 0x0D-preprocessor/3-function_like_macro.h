@@ -1,8 +1,9 @@
-#ifndef ABS_H
-#define ABS_H
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
 /**
- * ABS - function to define the absolute value
+ * File: 3-function_like_macro_h
+ * Use: function to define the absolute value
  *
  * @x: integer to be manipulated
  */
