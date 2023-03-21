@@ -6,5 +6,5 @@
  *
  * @x: integer to be manipulated
  */
-#define ABS(x) ((x) < (0) ? (x * -1) : (x))
+#define ABS(x) ((x) < (0) ? (x * -1) : (x * 1))
 #endif
