@@ -1,22 +1,14 @@
-#inculde "main.h"
+#include "main.h"
+#include "dog.h"
 /**
- * init_dog - function to call the structure value
+ * init_dog - function to test for struct of type dog
+ * Strut dog - struct of type dog
  *
- * struct dog - structure of type dog
- * @name: variable name
- * @d: pointer value to struture type dog
- * @age: variable of type age
- * @owner: the owners variable
- * Return: 0 Always
+ * @d: pointer value to 
+ * @name: vatiable name
+ * @age; years
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog
-	{
-		char *name;
-		float age;
-		char *owner;
-	};
-
-	struct dog *d;
+	struct dog my_dog;
 }
