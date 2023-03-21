@@ -3,9 +3,11 @@
 
 /**
  * File: 3-function_like_macro_h
- * Use: function to define the absolute value
+ * Desc: function to define the absolute value
  *
  * @x: integer to be manipulated
  */
+
 #define ABS(x) ((x) < 0 ? (-x) : (x))
+
 #endif
