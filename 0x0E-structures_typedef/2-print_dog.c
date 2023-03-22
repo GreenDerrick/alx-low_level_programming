@@ -1,25 +1,43 @@
 #include "main.h"
-#include <stdio.>
-#include <stdlib.h
+#include <stdio.h>
 /**
- * print_dog -  used to print rh contents of the pointer
- * @struct dog: struct of type dog
- * @d: this is the d pointer value
+ * print_dog - prints contents in the d variable
+ *
+ * struct dog -  struct of type dog
+ * @d: structure variable
  */
-void printf_dog(struct dog *d)
+
+void print_dog(struct dog *d)
 {
 	if (d == NULL)
 	{
-		printf("""):
 	}
-	
-	if (d->name)
-		printf("Name : (nil));
-	
-	if (s->owner)
-		printf("Owner: (nil))";
-	printf("%s\n", d->name);
-	printf("%f\n", d->age);
-	printf("%s\n", d->owner);
-}
 
+	if (d->name == NULL)
+	{
+		printf("Name: (nil)");
+	}
+	else
+	{
+		printf("%s\n", d->name);
+	}
+
+	if (d->age < 0)
+	{
+		printf("Age: (nil)");
+	}
+	else
+	{
+		printf("%f\n", d->age);
+	}
+
+	if (d->owner == NULL)
+	{
+		printf("Owner: (nil)");
+	}
+	else
+	{
+		printf("%s\n, d->owner);
+	}
+
+}
