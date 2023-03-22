@@ -38,7 +38,7 @@ void print_dog(struct dog *d)
 	}
 	else
 	{
-		printf("%s\n, d->owner);
+		printf("%s\n", d->owner);
 	}
 
 }
