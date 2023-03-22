@@ -2,8 +2,11 @@
 #include <stdio.h>
 int main(void)
 {
-	struct dog doggy;
-	init_dog(&doggy, "name", 19, "owener");
-	printf("%s\n", doggy.name);
-	return (0);
+	    struct dog my_dog;
+
+    my_dog.name = "Poppy";
+    my_dog.age = 3.5;
+    my_dog.owner = "Bob";
+    print_dog(&my_dog);
+    return (0);
 }
