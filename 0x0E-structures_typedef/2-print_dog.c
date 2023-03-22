@@ -1,5 +1,18 @@
+/**
+ * struct dog - structure of type dog
+ *
+ * @name: name varibale
+ * @age: age variable
+ * @owner: owner variable
+ */
+struct dog
+{
+	char *name;
+	int age;
+	char *owner;
+};
+
 #include "main.h"
-#include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -13,15 +26,15 @@ void print_dog(struct dog *d)
 	d = malloc(sizeof(struct dog));
 
 	if (d == NULL)
-		printf("");
-	if(d.name == NULL)
+		printf(" ");
+	if(d->name == NULL)
 		printf("Name: (nil)");
-	if(d.owner == NULL)
+	if(d->owner == NULL)
 		printf("Owner: (nil)");
-	if(d.age == NULL)
+	if(d->age == 0)
 		printf("Age: (nil)");
 	
-	printf("Name: %s\n", d.name);
-	printf("Age: %d\n", d.age);
-	printf("Owner: %s\n", d.owner);
+	printf("Name: %s\n", d->name);
+	printf("Age: %d\n", d->age);
+	printf("Owner: %s\n", d->owner);
 }
