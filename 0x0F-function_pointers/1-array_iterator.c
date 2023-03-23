@@ -10,17 +10,18 @@
  * @action: pointer function to the array_iterator
  * Return: No return
  */
-
 void array_iterator(int *array, size_t size, void (*action)(int))
-{
-	unsigned int i;
+	{
+		unsigned int i;
 
-	if (array == NULL || action == NULL)
-	{
-		return;
+
+		if (array == NULL || action == NULL)
+			return;
+
+
+		for (i = 0; i < size; i++)
+		{
+			action(array[i]);
+		}
 	}
-	for (i = 0; i <= size; i++)
-	{
-		action(array[i]);
-	}
-}
+
