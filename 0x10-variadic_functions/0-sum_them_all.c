@@ -25,8 +25,7 @@ int sum_them_all(const unsigned int n, ...)
 	for (i = n; i >= 1; i = va_arg(name, int))
 	{
 		sum = sum + va_arg(name, int);
-		va_end(name);
 	}
-
+	va_end(name);
 	return (sum);
 }
