@@ -7,12 +7,13 @@
  *
  * @n: constant unsigned integer
  * @...: variadic function declaration
+ * Return: sum
  */
 int sum_them_all(const unsigned int n, ...)
 {
 	int i;
 	int sum;
-	
+
 	va_list(name);
 	sum = 0;
 
@@ -24,7 +25,7 @@ int sum_them_all(const unsigned int n, ...)
 	for (i = n; i >= 0; i = va_arg(name, int))
 	{
 		sum = sum + va_arg(name, int);
-		va_end (name);
+		va_end(name);
 	}
 
 	return (sum);
