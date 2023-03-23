@@ -24,9 +24,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (separator != NULL && i > n)
 		{
 			printf("%d", va_arg(numbers, int));
-			printf("%s", separator);	
+			printf("%s", separator);
 		}
-		
+		else
+		{
+			printf("%s", separator);
+		}
+
 	}
 	printf("\n");
 	va_end(numbers);
