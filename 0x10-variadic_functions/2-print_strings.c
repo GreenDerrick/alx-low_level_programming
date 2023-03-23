@@ -36,6 +36,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			continue;
 		}
 	}
-	va_end(strings);
 	printf("\n");
+	va_end(strings);
 }
