@@ -4,8 +4,9 @@
 #include <stddef.h>
 /**
  * array_iterator - a function that will loop through the array
- * 
- * @size; the size of the array
+ *
+ * @array: the array to be iterated
+ * @size: the size of the array
  * @action: pointer function to the array_iterator
  * Return: No return
  */
