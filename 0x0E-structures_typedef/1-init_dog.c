@@ -23,5 +23,4 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	{
 		exit(1);
 	}
-	free(d);
 }
