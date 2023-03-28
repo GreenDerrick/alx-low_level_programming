@@ -12,8 +12,6 @@ void print_dog(struct dog *d)
 {
 	d = malloc(sizeof(struct dog));
 
-	if (d != NULL)
-	{
 		if (d -> name == NULL)
 		{
 			printf("Name: (nil)\n");
@@ -38,5 +36,6 @@ void print_dog(struct dog *d)
 		{
 			printf("Owner: %s\n",  d -> owner);
 		}
-	}
+
+		free(d);
 }

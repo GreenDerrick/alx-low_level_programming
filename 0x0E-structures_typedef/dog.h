@@ -7,7 +7,7 @@
  * @age: age variable
  * @owner: owner variable
  */
-struct dog
+struct do
 {
 	char *name;
 	float age;
