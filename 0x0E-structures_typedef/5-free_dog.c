@@ -7,5 +7,11 @@
  */
 void free_dog(dog_t *d)
 {
+	struct dog *d
+	{
+		char *name;
+		float age;
+		char *owner
+	};
 	free_dog(free(d));
 }
