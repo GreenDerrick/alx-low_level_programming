@@ -1,24 +1,23 @@
-#include "lists.h"
-#include <stdlib.h>
 #include <stdio.h>
 /**
- * list_len - function that outputs the length of a list
- * @h: pointer h to a structure
- * Return: length of the structures
+ * print_list - function that prints all the elements of a list_t list
+ * @h: The list_t list
+ *
+ * Return: the number of nodes
  */
-size_t list_len(const list_t *h)
+size_t print_list(const list_t *h)
 {
-	size_t count = 0;
+	size_t n = 0;
 
-	/* introduce a pointer head that will be used to show the start of a list*/
-	const list_t *head;
-	head = h;
-
-	while(head != NULL)
+	while (h)
 	{
-		count++;
-		head =  head->next;
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%d] %s\n", h->len, h->str);
+		n++;
+		h = h->next;
 	}
+	return (n);
 
-	return (count);
 }
