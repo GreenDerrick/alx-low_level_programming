@@ -1,4 +1,4 @@
-#include "lists.h"
+#include "main.h"
 #include <string.h>
 /**
  * *add_node_end - function that adds a new node at the end of a list_t list
