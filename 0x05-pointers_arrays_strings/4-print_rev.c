@@ -28,10 +28,13 @@ void print_rev(char *s)
 	first = 0;
 	last = (_len(s)) - 1;
 
-	while (s[last] != s[first])
+	while (0 != s[last])
 	{
 		_putchar(s[last]);
+		//_putchar(s[first]);
 		last--;
+		//first++;
 	}
-	_putchar(s[first]);
+//	_putchar(s[first]);
+	_putchar('\n');
 }
