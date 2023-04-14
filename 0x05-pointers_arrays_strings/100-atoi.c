@@ -123,7 +123,8 @@ int main(void)
 	_atoi("--98");
 	_atoi("-402");
 	_atoi("214748364");
-	_atoi("Suite 402");
+	_atoi("Suite 402")ear
+
 	_atoi("Don't hate the hacker, hate the code");
 	printf("In the following output numbers have been extracted");
 	_atoi("Extract the numbers in this line : 1w3e3r5r8fff89");
