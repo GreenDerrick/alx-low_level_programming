@@ -1,4 +1,4 @@
-#include "main.h"
+#include "function_pointers.h"
 /**
  * print_name - function to print charater pointes
  *
@@ -9,5 +9,6 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);
+	if (f && print_name)
+		f(name);
 }
