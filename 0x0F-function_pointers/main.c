@@ -9,7 +9,7 @@ void print(char *name)
 
 int main(void)
 {
-	print_name("Bob", &print);
+	print_name("Bob", NULL);
 	print_name("Bob Dylan", &print);
 	print_name("I am Bob", &print);
 	return (0);
