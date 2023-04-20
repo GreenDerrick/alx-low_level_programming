@@ -10,15 +10,13 @@
  * @action: function pointer
  * Return: nothing
  */
-
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
-	i = 0;
-
-	while (i < size)
+	if (array == NULL || action == NULL)
+		return;
+	while (size-- > 0)
 	{
-		action(array[i]);
-		i++;
+		action(*array);
+		array++;
 	}
 }
