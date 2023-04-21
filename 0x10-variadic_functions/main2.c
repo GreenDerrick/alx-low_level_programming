@@ -4,7 +4,6 @@
 
 int main(void)
 {
-	print_numbers("NULL", 3, 01, 2, 3, 4, 5);
-	print_numbers(",", 4,02, 98, -1024, 402);
+	print_strings(",", 2, "Jay", "Melody", "pupupu");
 	return (0);
 }
