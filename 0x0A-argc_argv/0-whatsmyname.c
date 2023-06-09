@@ -7,7 +7,7 @@
  * @argv: argument vector, holds arguments in the function
  * Return: 0 always
  */
-int main(int argc, char **argv)
+int main(int argc __attribute__((unused)), char **argv)
 {
 	int i;
 
