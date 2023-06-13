@@ -3,8 +3,8 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
- *
  * create_array - function to create an array
+ *
  * @size: variable to be mainpulated
  * @c: variable to be manipuated
  * Return: 1 if false 0 if true
