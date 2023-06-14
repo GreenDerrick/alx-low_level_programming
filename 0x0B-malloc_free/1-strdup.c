@@ -8,7 +8,7 @@
  * Return: string
  */
 
-char _strdup(char *str)
+char *_strdup(char *str)
 {
 	int i;
 	int a;
@@ -29,7 +29,7 @@ char _strdup(char *str)
 	 * allocate space to where we want to duplicate
 	 */
 
-	ptr = malloc(sizeof(str) * len);
+	ptr = malloc(sizeof(char) * len);
 
 	/**
 	 * check if ptr is NULL
