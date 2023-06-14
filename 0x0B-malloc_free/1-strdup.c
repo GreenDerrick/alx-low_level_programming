@@ -16,6 +16,12 @@ char *_strdup(char *str)
 	char *ptr;
 
 	/**
+	 * check if str is NULL
+	 */
+
+	if (str == NULL)
+		return (NULL);
+	/**
 	 * find length of the string
 	 */
 
@@ -35,7 +41,7 @@ char *_strdup(char *str)
 	 * check if ptr is NULL
 	 */
 
-	if (ptr == NULL && str == NULL)
+	if (ptr == NULL)
 		return (NULL);
 
 	/**
