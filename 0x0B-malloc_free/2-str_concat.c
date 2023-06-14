@@ -1,49 +1,42 @@
 #include "main.h"
-#include <stddef.h>
 #include <stdlib.h>
-
 /**
- * str_concat - concatenate two strings
+ * str_concat - get ends of input and add together for size
  * @s1: variable to be manipulated
  * @s2: variable to be manipulated
- * Return: string concatenated
+ * Return: concatenated string
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, k, len, len1, total;
 	char *ptr;
+	int i, j;
 
-	j = k = 0;
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-		len = i;
-	}
-	for (i = 0; s2[i] != '\0'; i++)
-	{
-		len1 = i;
-	}
-	total = (len + len1) + 3;
-
-	ptr = malloc(sizeof(char) * total);
+	i = j = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[j] != '\0')
+		j++;
+	ptr = malloc(sizeof(char) * (i + j + 1));
 
 	if (ptr == NULL)
 		return (NULL);
+	i = j = 0;
+	while (s1[i] != '\0')
+	{
+		ptr[i] = s1[i];
+		i++;
+	}
 
-	while (s1[j] != '\0')
+	while (s2[j] != '\0')
 	{
-		ptr[j] = s1[j];
-		j++;
+		ptr[i] = s2[j];
+		i++, j++;
 	}
-	while (s2[k] != '\0')
-	{
-		ptr[j] = s2[k];
-		j++;
-		k++;
-	}
-	ptr[j + k] = '\0';
+	ptr[i] = '\0';
 	return (ptr);
 }
