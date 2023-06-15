@@ -1,53 +1,46 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 #include <stddef.h>
 /**
- * string_nconcat - concatenating strings
- * @s1: variable to be manipulated
- * @s2: variable to be manipulated
- * @n: variable to be manipulated
- * Return: pointer
+ * string_nconcat - function to concatenate strings
+ * @s1: variable to manipulate
+ * @s2: variable to manpulate
+ * @n: number of characters to print
+ *
+ * Return: pointer to the resulting string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, len, len1, total, j, k;
-	char *ptr;
+	char *s;
+	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
 
-	k = j = 0;
-	if (s1 == NULL || s2 == NULL)
+	while (s1 && s1[len1])
+		len1++;
+	while (s2 && s2[len2])
+		len2++;
+
+	if (n < len2)
+		s = malloc(sizeof(char) * (len1 + n + 1));
+	else
+		s = malloc(sizeof(char) * (len1 + len2 + 1));
+
+	if (!s)
 		return (NULL);
-	for (i = 0; s1[i] != '\0'; i++)
+
+	while (i < len1)
 	{
-		len =  i + 1;
+		s[i] = s1[i];
+		i++;
 	}
-	for (i = 0; s2[i] != '\0'; i++)
-	{
-		len1 = i + 1;
-	}
-	total = (len + len1) + 1;
-	ptr = malloc(sizeof(char) * total);
-	if (ptr == NULL)
-		return (NULL);
-	while (s1[k] != '\0')
-	{
-		ptr[k] = s1[k];
-		k++;
-	}
-	if (n >= len1)
-	{
-		while (s2[j] != '\0')
-		{
-			ptr[k] = s2[j];
-			j++, k++;
-		}
-	}
-	else if (n < len1)
-	{
-		while (s2[j] != s2[n])
-		{
-			ptr[k] = s2[j];
-			j++, k++;
-		}
-	}
-	return (ptr);
+
+	while (n < len2 && i < (len1 + n))
+		s[i++] = s2[j++];
+
+	while (n >= len2 && i < (len1 + len2))
+		s[i++] = s2[j++];
+
+	s[i] = '\0';
+
+	return (s);
 }
+
