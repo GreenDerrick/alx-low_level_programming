@@ -8,7 +8,6 @@
  * @n: variable to be manipulated
  * Return: pointer
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int i, len, len1, total, j, k;
@@ -19,18 +18,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
 	{
-		len = i;
+		len =  i + 1;
 	}
-	len += 1;
 	for (i = 0; s2[i] != '\0'; i++)
 	{
-		len1 = i;
+		len1 = i + 1;
 	}
-	len1 += 1;
 	total = (len + len1) + 1;
-	printf("%d\n", total);
 	ptr = malloc(sizeof(char) * total);
-
 	if (ptr == NULL)
 		return (NULL);
 	while (s1[k] != '\0')
@@ -38,11 +33,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr[k] = s1[k];
 		k++;
 	}
-	while (s2[j] != s2[n])
+	if (n >= len1)
 	{
-		ptr[k] = s2[j];
-		j++;
-		k++;
+		while (s2[j] != '\0')
+		{
+			ptr[k] = s2[j];
+			j++, k++;
+		}
+	}
+	else if (n < len1)
+	{
+		while (s2[j] != s2[n])
+		{
+			ptr[k] = s2[j];
+			j++, k++;
+		}
 	}
 	return (ptr);
 }
