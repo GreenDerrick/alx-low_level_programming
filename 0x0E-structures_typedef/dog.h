@@ -1,3 +1,5 @@
+#ifndef MAIN_H
+#define MAIN_H
 /**
  * struct dog - structures
  * @name: variable
@@ -12,3 +14,4 @@ struct dog
 	float age;
 	char *owner;
 }
+#endif
