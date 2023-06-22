@@ -1,5 +1,3 @@
-#include <stddef.h>
-#include <stdlib.h>
 #include "function_pointers.h"
 /**
  * array_iterator - function that gives a paramerter on each array element
