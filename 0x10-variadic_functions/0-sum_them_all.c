@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stddef.h>
-#include "function_pointers.h"
+#include "variadic_functions.h"
 /**
  * sum_them_all - functions that adds all parameters provided in an input
  * @n: constant value : not be include in the addition
