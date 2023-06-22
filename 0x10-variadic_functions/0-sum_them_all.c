@@ -26,6 +26,5 @@ int sum_them_all(const unsigned int n, ...)
 		sum = num + sum;
 	}
 	va_end(add);
-	_putchar('\n');
 	return (sum);
 }
