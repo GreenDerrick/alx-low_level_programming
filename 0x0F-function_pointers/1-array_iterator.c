@@ -1,4 +1,6 @@
+#include <stddef.h>
 #include "function_pointers.h"
+#include <stdlib.h>
 /**
  * array_iterator - function that gives a paramerter on each array element
  * @array: variable to be manipulated
