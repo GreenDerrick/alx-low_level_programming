@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 
 	for (i = 1; i < argc; i++)
 	{
-		if ((atoi(argv[i])) >= 0 && (atoi(argv[i])) <= 1000000)
+		if ((atoi(argv[i])) >= 0 && (atoi(argv[i])) <= 1000000000)
 		{
 			add = add + atoi(argv[i]);
 		}
