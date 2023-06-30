@@ -17,7 +17,6 @@ size_t print_list(const list_t *h)
 	if (h == NULL)
 	{
 		printf("No data present");
-		exit(1);
 	}
 	while (h != NULL)
 	{
