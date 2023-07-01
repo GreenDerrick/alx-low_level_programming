@@ -1,28 +1,25 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <stddef.h>
+#include <stdlib.h>
 #include "lists.h"
-
 /**
- * add_node - funciton to add a new node to the beginning of a list
- * @head: header pointing to first element
- * @str: string to be copied to fitsr
+ * add_node - function that adds a new node to beginnig of a list
+ * @head: variable to be manipulated
+ * @str: variable to be manipulated
+ * Return: address of new_node
  */
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new;
-	unsigned int len = 0;
+	list_t *new_node;
 
-	new = malloc(sizeof(list_t));
-	if (!new)
-		return (NULL);
+	new_node = malloc(sizeof(list_t));
 
-	new->str = strdup(str);
-	new->len = len;
-	new->next = (*head);
-	(*head) = new;
-
-	return (*head);
+	while (new_node != NULL)
+	{
+		new_node->len;
+		new_node->str = strdup(str);
+		new_node->next = head;
+		head = new_node;
+	}
+	return (&new_node);
 }
-
