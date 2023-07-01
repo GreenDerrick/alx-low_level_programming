@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
@@ -23,3 +24,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	return (&new_node);
 }
+=======
+
+
+>>>>>>> 3217846fbb2b711f849b6d325822e73d78de2094
