@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * add_node - function that adds a node to the end of the list
+ * add_node_end - function that adds a node to the end of the list
  * @head: name of new structure
  * @str: string to be duplicated
  * Return: address of new element
