@@ -20,7 +20,7 @@ list_t *add_node(list_t **head, const char *str)
 		exit(1);
 	}
 	new_node->str = strdup(str);
-	new_node->next = new_node;
+	new_node->next = *head;
 	*head = new_node;
 	return (new_node);
 }
