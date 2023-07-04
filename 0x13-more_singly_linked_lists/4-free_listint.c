@@ -6,10 +6,14 @@
  */
 void free_listint(listint_t *head)
 {
+	listint_t *temp;
+
 	if (head == NULL)
 	{
 		printf("No memory allocated");
 		exit(1);
 	}
+	head = temp;
+	free(head->n);
 	free(head);
 }
