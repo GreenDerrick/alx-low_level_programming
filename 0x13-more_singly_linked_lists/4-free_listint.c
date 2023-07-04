@@ -7,12 +7,10 @@
 void free_listint(listint_t *head)
 {
 	listint_t *temp;
-
-	if (head == NULL)
+	while (head != NULL)
 	{
-		printf("No memory allocated");
-		exit(1);
+		head = temp;
+		temp = head->next;
 	}
-	head = temp;
 	free(head);
 }
