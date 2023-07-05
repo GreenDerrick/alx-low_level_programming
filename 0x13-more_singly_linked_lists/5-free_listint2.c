@@ -11,7 +11,10 @@ void free_listint2(listint_t **head)
 
 	temp = *head;
 	if (head == NULL)
+	{
+		printf("No memory allocated");
 		exit(1);
+	}
 	while (temp != NULL)
 	{
 		next = temp->next;
