@@ -7,7 +7,10 @@
 
 void print_binary(unsigned long int n)
 {
-	int mod[64], count , i;
+	int mod[64];
+	int count;
+	int i;
+
 	count = 0;
 	if (n == 0)
 		_putchar(0 + '0');
