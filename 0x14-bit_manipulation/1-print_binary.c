@@ -14,6 +14,7 @@ void print_binary(unsigned long int n)
 	count = 0;
 	if (n == 0)
 		_putchar(0 + '0');
+	_putchar('\n');
 	while (n != 0)
 	{
 		mod[count] = n % 2;
