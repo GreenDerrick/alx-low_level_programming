@@ -24,4 +24,5 @@ void print_binary(unsigned long int n)
 	{
 		_putchar(mod[i] + '0');
 	}
+	_putchar('\n');
 }
