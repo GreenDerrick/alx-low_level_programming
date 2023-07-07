@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
 	int i;
 	int binary;
 
-	for (i = 11; i >= 0; i--)
+	for (i = sizeof(int); i >= 0; i--)
 	{
 		binary = (n >> i) & 1;
 		_putchar(binary + '0');
