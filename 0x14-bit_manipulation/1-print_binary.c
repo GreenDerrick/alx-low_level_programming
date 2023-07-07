@@ -10,7 +10,7 @@
 
 void print_binary(unsigned long int n)
 {
-	long  int i, binary, a;
+	long  int i, binary, a, count;
 
 	if ((signed int)n >= 0 && n <= 1)
 		a = 0;
@@ -34,5 +34,8 @@ void print_binary(unsigned long int n)
 	{
 		binary = (n >> i) & 1;
 		_putchar(binary + '0');
+		count++;
 	}
+	if (!count)
+		_putchar('0' + 0);
 }
