@@ -10,19 +10,20 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int size, i, new, final, power, base, raise;
+	int a;
+	unsigned int val;
 
-	size = strlen(b);
-	base = 2;
-	power = 0;
-	final = 0;
+	val = 0;
+	if (!b)
+		return (0);
 
-	for (i = size - 1; i >= 0; i--)
+	for (a = 0; b[a]; a++)
 	{
-		new = b[i] - '0';
-		raise = (base *= 2);
-		final += new * raise;
-		power++;
+		if (b[a] < '0' || b[a] > '1')
+			return (0);
+		dec_val = 2 * dec_val + (b[a] - '0');
 	}
-	return (final);
+
+	return (val);
+}
 }
