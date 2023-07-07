@@ -29,7 +29,7 @@ void print_binary(unsigned long int n)
 	else if (n >= 128 && n <= 255)
 		a = 7;
 	else
-		a = 12;
+		a = 31;
 	for (i = a; i >= 0; i--)
 	{
 		binary = (n >> (i)) & 1;
