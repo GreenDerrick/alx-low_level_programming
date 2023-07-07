@@ -10,10 +10,9 @@
 
 void print_binary(unsigned long int n)
 {
-	long  int i, binary,  b;
+	long  int i, binary, a;
 
-	b = 0;
-	/**if ((signed int)n >= 0 && n <= 1)
+	if ((signed int)n >= 0 && n <= 1)
 		a = 0;
 	else if (n >= 2 && n <= 3)
 		a = 1;
@@ -30,18 +29,10 @@ void print_binary(unsigned long int n)
 	else if (n >= 128 && n <= 255)
 		a = 7;
 	else
-		a = 63;*/
-	for (i = 63; i >= 0; i--)
+		a = 63;
+	for (i = a; i >= 0; i--)
 	{
-		binary = n >> i;
-		if (binary & 1)
-		{
-			_putchar('1');
-			b++;
-		}
-		else if (b)
-			_putchar('0');
+		binary = (n >> i) & 1;
+		_putchar(binary + '0');
 	}
-	if (!b)
-		_putchar('0' + 0);
 }
