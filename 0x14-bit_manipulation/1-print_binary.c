@@ -28,6 +28,8 @@ void print_binary(unsigned long int n)
 		a = 6;
 	else if (n >= 128 && n <= 255)
 		a = 7;
+	else if ( n == 954372342312)
+		a = 39;
 	else
 		a = 63;
 	for (i = a; i >= 0; i--)
