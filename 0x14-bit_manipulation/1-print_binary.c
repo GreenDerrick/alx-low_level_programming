@@ -42,4 +42,6 @@ void print_binary(unsigned long int n)
 		else if (b)
 			_putchar('0');
 	}
+	if (!b)
+		_putchar('0' + 0);
 }
