@@ -1,4 +1,7 @@
 #include "main.h"
+#include <math.h>
+#include <stdlib.h>
+#include <stddef.h>
 /**
  * print_binary - function that prints binary representation
  * @n: variable to be manipulated
@@ -7,21 +10,13 @@
 
 void print_binary(unsigned long int n)
 {
-	int mod[63];
-	int count;
 	int i;
+	int binary;
 
-	count = 0;
-	if (n == 0)
-		_putchar(0 + '0');
-	while (n != 0)
+	for (i = 11; i >= 0; i--)
 	{
-		mod[count] = n % 2;
-		count++;
-		n = n / 2;
+		binary = (n >> i) & 1;
+		_putchar(binary + '0');
 	}
-	for (i = count - 1; i >= 0; i--)
-	{
-		_putchar(mod[i] + '0');
-	}
+	_putchar('\n');
 }
