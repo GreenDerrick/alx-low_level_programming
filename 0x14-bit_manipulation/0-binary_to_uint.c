@@ -11,9 +11,9 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int a;
-	unsigned int val;
+	unsigned int value;
 
-	val = 0;
+	value = 0;
 	if (!b)
 		return (0);
 
@@ -21,9 +21,8 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[a] < '0' || b[a] > '1')
 			return (0);
-		dec_val = 2 * dec_val + (b[a] - '0');
+		value = 2 * value + (b[a] - '0');
 	}
 
-	return (val);
-}
+	return (value);
 }
