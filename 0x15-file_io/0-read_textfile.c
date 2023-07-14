@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * read_textfile - function that reads a text file and prints
  * @filename: variable to be manipulated
@@ -9,7 +10,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buf;
 	ssize_t file;
-	ssize_t write;
+	ssize_t wri;
 	ssize_t t;
 
 	file = open(filename, O_RDONLY);
@@ -17,9 +18,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	buf = malloc(sizeof(char) * letters);
 	t = read(file, buf, letters);
-	write = write(STDOUT_FILENO, buf, t);
+	wri = write(STDOUT_FILENO, buf, t);
 
 	free(buf);
 	close(file);
-	return (write);
+	return (wri);
 }
