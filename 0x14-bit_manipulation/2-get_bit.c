@@ -3,17 +3,16 @@
  * get_bit - function that return a bit value at a givem index
  * @n: variable to be manipulated
  * @index: variable to be manipulated
- * Return: value of bit
+ * Return: value of the bit
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int value;
+	unsigned long int buffer;
 
-	if (n == 0 || index == 0)
-		exit(1);
 	if (index > 64)
 		return (-1);
-	value = (n >> index) & 1;
-	return (value & 1);
-	_putchar('\n');
+
+	buffer = n >> index;
+
+	return (buffer & 1);
 }
