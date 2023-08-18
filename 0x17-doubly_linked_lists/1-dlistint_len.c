@@ -9,11 +9,6 @@ size_t dlistint_len(const dlistint_t *h)
 	size_t count;
 
 	count = 0;
-	if (h == NULL)
-	{
-		printf("No memory allocated\n");
-		exit(1);
-	}
 	while (h != NULL)
 	{
 		count++;
