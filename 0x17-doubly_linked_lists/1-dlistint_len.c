@@ -11,7 +11,7 @@ size_t dlistint_len(const dlistint_t *h)
 	count = 0;
 	if (h == NULL)
 	{
-		printf("No memory allocated");
+		printf("No memory allocated\n");
 		exit(1);
 	}
 	while (h != NULL)
