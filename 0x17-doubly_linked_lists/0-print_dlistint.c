@@ -15,12 +15,9 @@ size_t print_dlistint(const dlistint_t *h)
 		printf("No memory allocated");
 		exit(1);
 	}
-	while (h != NULL)
-	{
-		age = h->n;
-		printf("%d\n", age);
-		count++;
-		h = h->next;
-	}
+	age = h->n;
+	printf("%d\n", age);
+	count++;
+	h = h->next;
 	return (count);
 }
